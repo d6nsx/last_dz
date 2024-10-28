@@ -1,4 +1,3 @@
-// TodoList.js
 import React, { useState, useEffect } from 'react';
 import Button from "./button/Button.jsx";
 
@@ -9,13 +8,11 @@ const TodoList = () => {
     const [isEditing, setIsEditing] = useState(null);
     const [editValue, setEditValue] = useState('');
 
-    // Загрузка задач из localStorage при первой загрузке компонента
     useEffect(() => {
         const storedTodos = JSON.parse(localStorage.getItem('todos')) || [];
         setTodos(storedTodos);
     }, []);
 
-    // Сохранение задач в localStorage при каждом изменении списка
     useEffect(() => {
         localStorage.setItem('todos', JSON.stringify(todos));
     }, [todos]);
@@ -48,7 +45,7 @@ const TodoList = () => {
     };
 
     const handleClearAll = () => {
-        setTodos([]); // Удаление всех задач
+        setTodos([]);
     };
 
     return (

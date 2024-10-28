@@ -1,41 +1,46 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
 .btn_main {
     font-size: 16px;
     font-weight: bold;
     color: #fff;
     padding: 12px 24px;
-    border: none;
+    border: 2px solid #fff;
     border-radius: 8px;
+    background-color: #000;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.1s ease;
 }
 
 .add-task-btn {
-    background: linear-gradient(145deg, #ff00ff, #ff6fff);
-    box-shadow: 0 5px 15px rgba(255, 0, 255, 0.3);
+    background-color: #000;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
 
-
 .add-task-btn:hover {
-    background: linear-gradient(145deg, #ff6fff, #ff00ff);
+    background-color: #333;
 }
 .add-task-btn:active {
     transform: scale(0.95);
 }
 
-    
 .add-task-btn:disabled {
-    background: #000000;
-    color: #000000;
+    background-color: #333;
+    color: #666;
     cursor: not-allowed;
+    border-color: #666;
 }
-
 
 .edit-btn, .delete-btn {
     width: 40px;
     height: 40px;
     border: 2px solid #fff;
     border-radius: 8px;
-    background: transparent;
+    background: #000;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,27 +49,27 @@
 }
 
 .edit-btn:hover {
-    background: rgba(255, 0, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
 }
 .delete-btn:hover {
     background: rgba(255, 0, 0, 0.2);
 }
 
+/* Clear All button */
 .clear-all-btn {
     font-size: 16px;
     font-weight: bold;
     color: #fff;
     padding: 10px 20px;
     border-radius: 8px;
-    background: linear-gradient(145deg, #ff4d4d, #ff6666);
-    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+    background-color: #000;
+    border: 2px solid #fff;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.1s ease;
 }
 
-
 .clear-all-btn:hover {
-    background: linear-gradient(145deg, #ff6666, #ff4d4d);
+    background-color: #333;
 }
 .clear-all-btn:active {
     transform: scale(0.95);
