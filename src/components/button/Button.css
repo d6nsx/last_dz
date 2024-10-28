@@ -1,0 +1,73 @@
+/* Основной стиль кнопки */
+.btn_main {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+/* Стиль для Add task кнопки */
+.add-task-btn {
+    background: linear-gradient(145deg, #ff00ff, #ff6fff);
+    box-shadow: 0 5px 15px rgba(255, 0, 255, 0.3);
+}
+
+/* Hover и Pressed эффекты для Add task */
+.add-task-btn:hover {
+    background: linear-gradient(145deg, #ff6fff, #ff00ff);
+}
+.add-task-btn:active {
+    transform: scale(0.95);
+}
+
+/* Disabled состояние */
+.add-task-btn:disabled {
+    background: #ccc;
+    color: #888;
+    cursor: not-allowed;
+}
+
+/* Кнопки Edit и Delete */
+.edit-btn, .delete-btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.edit-btn:hover {
+    background: rgba(255, 0, 255, 0.2);
+}
+.delete-btn:hover {
+    background: rgba(255, 0, 0, 0.2);
+}
+
+.clear-all-btn {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #ff4d4d, #ff6666);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+/* Hover и Pressed эффекты для Clear All */
+.clear-all-btn:hover {
+    background: linear-gradient(145deg, #ff6666, #ff4d4d);
+}
+.clear-all-btn:active {
+    transform: scale(0.95);
+}
