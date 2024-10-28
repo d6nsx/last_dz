@@ -1,4 +1,7 @@
-/* Стиль для списка задач */
+h1 {
+    color: #fff;
+}
+
 .todo-item {
     display: flex;
     align-items: center;
@@ -8,14 +11,14 @@
     background: #111;
     border-radius: 8px;
     color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .todo-item input[type="text"] {
     background: transparent;
     border: 1px solid #fff;
     border-radius: 8px;
-    color: #fff;
+    color: #000000;
     padding: 8px;
     width: 80%;
 }
