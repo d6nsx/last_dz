@@ -1,0 +1,38 @@
+.pokemoncard {
+    background-color: #111;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        border-color: #ff00ff;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        text-transform: capitalize;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .detailsbutton {
+        background-color: #ff00ff;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        width: 100%;
+        font-weight: bold;
+
+    }
+}
